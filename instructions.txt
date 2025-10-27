@@ -1,0 +1,42 @@
+docker-compose stop
+
+docker-compose start
+
+
+git clone https://github.com/linuxserver/docker-emulatorjs.git
+cd docker-emulatorjs
+docker build \
+  --no-cache \
+  --pull \
+  -t lscr.io/linuxserver/emulatorjs:latest .
+
+
+
+  create file docker-compose.yml with contents below
+  ---
+version: "2.1"
+services:
+  emulatorjs:
+    image: lscr.io/linuxserver/emulatorjs:latest
+    container_name: emulatorjs
+    environment:
+      # PUID/PGID can be ignored in Codespaces as file permissions are handled differently
+      - TZ=Etc/UTC # Set your timezone
+    volumes:
+      # Using relative paths here will create folders inside your cloned repository
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 80:80
+      - 3000:3000
+    restart: unless-stopped
+
+
+END file
+
+RUN COMMAND
+
+docker-compose up -d
+
+
+Add roms by modifying data folders and uploading roms

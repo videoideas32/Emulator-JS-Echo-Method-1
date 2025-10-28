@@ -5,3 +5,27 @@ CREATED BY ANOTHER GITHUB USER
 
 This project is simply a version of EmulatorJS that is able to be ran in a codespace
 
+
+INSTRUCTIONS BELOW
+
+
+1. Go to the github codespaces home page after creating/logging in to your github account
+   
+2. Create a codespace with a blank template and open it
+
+3. Type or paste this command into the terminal, run the command and wait for it to finish
+
+   git clone https://github.com/linuxserver/docker-emulatorjs.git
+cd docker-emulatorjs
+docker build \
+  --no-cache \
+  --pull \
+  -t lscr.io/linuxserver/emulatorjs:latest .
+
+5. 
+
+6.
+
+   
+
+

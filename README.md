@@ -22,9 +22,35 @@ docker build \
   --pull \
   -t lscr.io/linuxserver/emulatorjs:latest .
 
-5. 
+5. Create a file titled docker-compose.yml in the root of the codespace with the following contents
 
-6.
+   ---
+version: "2.1"
+services:
+  emulatorjs:
+    image: lscr.io/linuxserver/emulatorjs:latest
+    container_name: emulatorjs
+    environment:
+      # PUID/PGID can be ignored in Codespaces as file permissions are handled differently
+      - TZ=Etc/UTC # Set your timezone
+    volumes:
+      # Using relative paths here will create folders inside your cloned repository
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 80:80
+      - 3000:3000
+    restart: unless-stopped
+
+    
+
+6. Run the command: docker-compose up -d in the terminal and let it run
+
+
+
+   CONGRATS
+
+   Yo
 
    
 

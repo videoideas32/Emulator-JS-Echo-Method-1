@@ -54,4 +54,23 @@ services:
 
    Click on the ports tab and open port 3000 in the browser by clicking the globe icon
 
+   Follow the instructions on screen to download the default fileset
+
+   After completed add game roms to the roms folder on github codespaces (located under the retro system name underneath of the data folder
+
+   After adding them go back to port 3000 and click to scan the retro system you have added roms to
+
+   After scan is complete click on the game systems on the left side and click add all to config
+
+   After adding all games: open port 80 by clicking the globe icon and your emulator should be working
+
+   CONGRATS YOU ARE OFFICIALLY DONE
+   YOU NOW HAVE YOUR OWN EMULATOR INSTALLED
+
+   COMMANDS FOR TROUBLESHOOTING
+
+   docker-compose restart
+   docker-compose start
+   docker-compose stop
+
 

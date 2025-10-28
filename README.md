@@ -50,8 +50,8 @@ services:
 
    CONGRATS
 
-   Yo
+   You have officially installed everything you need to start
 
-   
+   Click on the ports tab and open port 3000 in the browser by clicking the globe icon
 
 

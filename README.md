@@ -76,9 +76,9 @@ services:
 
    COMMANDS FOR TROUBLESHOOTING
 
-docker-compose restart
-docker-compose start
-docker-compose stop
+docker-compose restart|
+docker-compose start|
+docker-compose stop|
 
 *NEW POSSIBLE ERROR*
 COMMAND TO FIX:

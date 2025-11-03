@@ -76,8 +76,15 @@ services:
 
    COMMANDS FOR TROUBLESHOOTING
 
-   docker-compose restart
-   docker-compose start
-   docker-compose stop
+docker-compose restart
+docker-compose start
+docker-compose stop
+
+*NEW POSSIBLE ERROR*
+COMMAND TO FIX:
+
+docker compose up -d --build
+
+FINALLY
 
 MAY NEED TO CHECK THE ACTUAL README FILE FOR CORRECT FORMAT FOR CODE AND/OR .yml FILE CONTENTS

@@ -2,6 +2,13 @@ docker-compose stop
 
 docker-compose start
 
+*NEW ERROR POSSIBILITY DISCOVERED AS OF 11/3/25*
+
+COMMAND TO FIX:
+
+docker compose up -d --build
+
+******************************
 
 git clone https://github.com/linuxserver/docker-emulatorjs.git
 cd docker-emulatorjs
